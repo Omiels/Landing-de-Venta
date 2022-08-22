@@ -1,0 +1,301 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {font-size: 3.4em;}
+h2{ font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.25;}
+ul{list-style: none;}
+li{font-size: 1.25em;}
+
+button {
+  font-size: 1.5;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid rgb(0, 0, 0,0.5);
+  box-shadow: 2px 2px 10px rgb(0, 0, 0,0.5) ;
+  color: white;
+  background-color: rgb(105, 149, 129);
+}
+
+button:hover {
+  background-color: rgb(66, 94, 82);
+}
+
+.color-acento {
+  /* color: rgb(26, 117, 26); */
+}
+
+.container {
+  max-width: 1440px;
+  margin: auto;
+}
+
+header {
+  background-color: rgb(245,245,245);
+}
+
+header .logo {
+  margin: 0;
+  padding: 25px 30px;
+  font-weight: bold;
+  color: rgb(26, 117, 26);
+  font-size: 1.6em;
+}
+
+header .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header nav {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+header a {
+  padding: 5px 12px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #222625;
+}
+
+header a:hover {
+  color:rgb(66, 94, 82);
+}
+
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 90vh;
+
+  background-image: url("images/hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#hero h1 {
+  color: whitesmoke;
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+#hero .form {
+  width: 400px;
+  border: 0px solid #D6D9DC;
+  border-radius: 15px;
+  padding-bottom: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#email {
+  width: 400px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #b3c7bd;
+  color: #153525;
+}
+
+#somos-plant .container {
+  text-align: center;
+  padding: 200px 12px;
+  color: #222625;
+}
+
+#mas-vendidos {
+  background-color: #153525;
+  color: aliceblue;
+  text-align: center;
+}
+
+#mas-vendidos .container {
+  padding: 150px 12px;
+}
+
+#mas-vendidos h2 {
+  margin-top: 0;
+  font-size: 3.2em;
+}
+
+#mas-vendidos p{
+  display: none;
+}
+
+#mas-vendidos .cartas {
+  background-size: cover;
+  background-position: center center;
+  padding: 50px;
+  margin: 20px;
+  border-radius: 15px;
+}
+
+.cartas:first-child {
+  background-image: linear-gradient(
+    0deg, 
+    rgba(0, 0, 0, 0.5), 
+    rgba(0, 0, 0, 0.5)
+    ) 
+    ,url("images/2.webp");
+}
+
+.cartas:nth-child(2) {
+  background-image: linear-gradient(
+    0deg, 
+    rgba(0, 0, 0, 0.5), 
+    rgba(0, 0, 0, 0.5)
+    ) 
+    ,url("images/3.jpg");
+}
+
+.cartas:nth-child(3) {
+  background-image: linear-gradient(
+    0deg, 
+    rgba(0, 0, 0, 0.5), 
+    rgba(0, 0, 0, 0.5)
+    ) 
+    ,url("images/1.jpg");
+}
+
+#tips .container {
+  text-align: center;
+  padding: 200px 12px;
+  color: #222625;
+}
+
+#tips li {
+  margin: 15px 0px;
+  font-weight: bold;
+}
+
+footer {
+  background-color: rgb(230,230,230);
+}
+
+footer p {
+  margin: 0;
+  color: rgb(129, 123, 117);
+  padding: 12px;
+}
+
+footer .container {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+@media (min-width: 720px){
+
+  header {
+    position: fixed;
+    width: 100%;
+  }
+  
+  header .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  header nav {
+    flex-direction: row;
+    padding-bottom: 0;
+    padding-right: 20px;
+  }
+
+  #hero h1 {
+    font-size: 5em;
+  }
+
+  #somos-plant .container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  #somos-plant .img-somos {
+    background-image: url(images/4.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 400px;
+  }
+
+  #somos-plant .texto {
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #mas-vendidos .vendidos {
+    display: flex;
+    justify-content: center;
+  }
+
+  #mas-vendidos p{
+    display: block;
+    margin: 30px;
+    height: auto;
+  }
+
+  #mas-vendidos h3 {
+    margin-top: 0;
+  }
+
+  #mas-vendidos .cartas {
+    padding: 50px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    height: auto;
+  }
+
+  #tips {
+
+  }
+
+  #tips .container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  #tips .img-vendidos {
+    background-image: url(images/5.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 400px;
+  }
+
+  #tips .texto {
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+}
