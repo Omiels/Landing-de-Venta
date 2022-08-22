@@ -34,9 +34,9 @@ button:hover {
   background-color: rgb(66, 94, 82);
 }
 
-.color-acento {
-  /* color: rgb(26, 117, 26); */
-}
+/* .color-acento {
+  color: rgb(26, 117, 26);
+} */
 
 .container {
   max-width: 1440px;
@@ -271,9 +271,9 @@ footer .container {
     height: auto;
   }
 
-  #tips {
+  /* #tips {
 
-  }
+  } */
 
   #tips .container {
     display: flex;
